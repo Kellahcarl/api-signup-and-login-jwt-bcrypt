@@ -1,0 +1,23 @@
+
+
+GET http://localhost:3055/users
+
+
+###
+
+POST http://localhost:3055/users
+Content-Type: application/json
+
+{
+    "name":"kyle",
+    "password":"12345678"
+}
+###
+
+POST http://localhost:3055/users/login
+Content-Type: application/json
+
+{
+    "name":"kyle",
+    "password":"password"
+}
